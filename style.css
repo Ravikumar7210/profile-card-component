@@ -20,6 +20,7 @@ margin-bottom: 35px;
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .card{
@@ -28,6 +29,7 @@ margin-bottom: 35px;
     background: white;
     overflow: hidden;
     text-align: center;
+    position: relative;
 } 
 .img-holder{
     width: 90px;
@@ -89,7 +91,17 @@ margin-bottom: 35px;
     font-size: .9rem;
     letter-spacing: 1px;
 }
-
+.circle .c1, .circle .c2{
+    position: absolute;
+}
+.c1{
+    top: -550px;
+    left: -300px;
+}
+.c2{
+    bottom: -650px;
+    right: -325px;;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -98,3 +110,26 @@ margin-bottom: 35px;
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+  @media (min-device-width:1024px) and (max-device-width : 1334px) {
+      .c1 {
+          top: -265px;
+          left: -428px;
+      }
+      .c2{
+          bottom: -335px;
+          right:-404px
+      }
+  }
+  @media (min-device-width:414px) and (max-device-width : 1023px) {
+    .c1 {
+        top: -585px;
+        left: -760px;
+    }
+    .c2{
+        bottom: -635px;
+        right:-714px
+    }
+    .card{
+        width: 350px ;
+    }
+}
